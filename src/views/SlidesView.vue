@@ -45,7 +45,7 @@ const nextPage = (next) => {
     </div>
     <div class="h-[35vh] flex flex-col items-center justify-center w-full px-5">
       <h1 class="mb-3 text-4xl font-bold text-green-600">Easy Payment</h1>
-      <p class="h-20 overflow-hidden text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum autem eius, harum sint quam deleniti?</p>
+      <p class="h-20 overflow-hidden text-justify">Lorem 1 ipsum dolor, sit amet consectetur adipisicing elit. Eum autem eius, harum sint quam deleniti?</p>
       <div class="flex items-center my-5 space-x-1">
         <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
         <div class="w-10 h-2 bg-green-500 rounded-full"></div>
