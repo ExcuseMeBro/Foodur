@@ -24,7 +24,8 @@ onUnmounted(() => {
 const isShowNavbar = ref(false)
 
 watch(() => router.currentRoute.value, () => {
-  isShowNavbar.value = router.currentRoute.value?.path === '/' || router.currentRoute.value?.path === '/slides' || router.currentRoute.value?.path === '/welcome'
+  let path = router.currentRoute.value?.path
+  isShowNavbar.value = path === '/' || path === '/slides' || path === '/welcome'
 })
 </script>
 
