@@ -25,7 +25,7 @@ const isShowNavbar = ref(false)
 
 watch(() => router.currentRoute.value, () => {
   let path = router.currentRoute.value?.path
-  isShowNavbar.value = path === '/' || path === '/slides' || path === '/welcome'
+  isShowNavbar.value = path === '/' || path === '/slides' || path === '/welcome' || path === '/login'
 })
 </script>
 

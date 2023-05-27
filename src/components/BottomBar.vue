@@ -15,34 +15,34 @@ const goHome = () => router.push('/dashboard')
 <template>
   <div
     class="fixed bottom-0 z-50 w-full h-20 max-w-lg -translate-x-1/2 bg-white rounded-t-3xl left-1/2">
-    <div class="grid h-full max-w-lg grid-cols-5 p-5">
+    <div class="grid h-full max-w-lg grid-cols-5 py-5">
+      <router-link to="/dashboard" class="flex flex-col items-center justify-between" active-class="text-green-500">
+        <div>
+          <HomeIcon class="w-9 h-9"/>
+        </div>
+        <p class="text-xs">home</p>
+      </router-link>
       <div class="flex flex-col items-center justify-between">
         <div>
-          <HomeIcon class="w-7 h-7"/>
+          <FileIcon class="w-9 h-9"/>
         </div>
         <p class="text-xs">home</p>
       </div>
       <div class="flex flex-col items-center justify-between">
         <div>
-          <FileIcon class="w-7 h-7"/>
+          <ChatIcon class="w-9 h-9"/>
         </div>
         <p class="text-xs">home</p>
       </div>
       <div class="flex flex-col items-center justify-between">
         <div>
-          <ChatIcon class="w-7 h-7"/>
+          <WalletIcon class="w-9 h-9"/>
         </div>
         <p class="text-xs">home</p>
       </div>
       <div class="flex flex-col items-center justify-between">
         <div>
-          <WalletIcon class="w-7 h-7"/>
-        </div>
-        <p class="text-xs">home</p>
-      </div>
-      <div class="flex flex-col items-center justify-between">
-        <div>
-          <UserIcon class="w-7 h-7"/>
+          <UserIcon class="w-9 h-9"/>
         </div>
         <p class="text-xs">home</p>
       </div>

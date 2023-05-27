@@ -1,6 +1,7 @@
 import HomeViewVue from '@/views/HomeView.vue'
 import WelcomeView from '@/views/WelcomeView.vue'
 import SlidesViewVue from '@/views/SlidesView.vue'
+import LoginView from '@/views/LoginView.vue'
 import SplashViewVue from '@/views/SplashView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -21,6 +22,11 @@ const router = createRouter({
       path: '/slides',
       name: 'threeSlides',
       component: SlidesViewVue
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: LoginView
     },
     {
       path: '/dashboard',

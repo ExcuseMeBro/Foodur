@@ -18,7 +18,7 @@ const nextPage = (next) => {
     slides.secondSlide = false
     slides.thirdSlide = true
   } else {
-    router.push('/dashboard')
+    router.push('/login')
   }
 }
 
@@ -37,7 +37,7 @@ const nextPage = (next) => {
         <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
       </div>
     </div>
-    <div @click="nextPage(1)" class="relative w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg bottom-5">Next</div>
+    <div @click="nextPage(1)" class="relative bottom-0 w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg">Next</div>
   </div>
   <div v-if="slides.secondSlide" class="flex flex-col items-center justify-center w-full h-screen px-3">
     <div class="flex items-center justify-start w-full h-[350px] bg-[url('/pattern.svg')] bg-contain">
@@ -52,7 +52,7 @@ const nextPage = (next) => {
         <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
       </div>
     </div>
-    <div @click="nextPage(2)" class="relative w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg bottom-5">Next</div>
+    <div @click="nextPage(2)" class="relative bottom-0 w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg">Next</div>
   </div>
   <div v-if="slides.thirdSlide" class="flex flex-col items-center justify-center w-full h-screen px-3">
     <div class="flex items-center justify-start w-full h-[350px] bg-[url('/pattern.svg')] bg-contain">
@@ -67,7 +67,7 @@ const nextPage = (next) => {
         <div class="w-10 h-2 bg-green-500 rounded-full"></div>
       </div>
     </div>
-    <div @click="nextPage(0)" class="relative w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg bottom-5">Next</div>
+    <div @click="nextPage(0)" class="relative bottom-0 w-full p-3 mx-5 text-lg font-bold text-center text-white bg-green-600 rounded-full shadow-lg">Get Started</div>
   </div>
 </template>
 

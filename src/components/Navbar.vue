@@ -23,16 +23,16 @@ const openModal = () => {
 
 </script>
 <template>
-  <div class="fixed top-0 z-50 flex items-center justify-between w-full h-12 p-3 bg-white shadow">
+  <div class="fixed top-0 z-50 flex items-center justify-between w-full p-3 bg-white shadow h-14">
     <div v-if="checkRoute()" class="flex items-center font-bold">
-      <img src="/logo.svg" class="w-5 mr-2" />
-      <p class="text-red-600"><span class="text-green-600">Food</span>ur</p>
+      <img src="/logo.svg" class="mr-2 w-7" />
+      <p class="text-xl text-red-600"><span class="text-green-600">Food</span>ur</p>
     </div>
     <div v-else @click="goHome()" class="flex items-center">
       <ChevronIcon class="rotate-180 w-7 h-7" /> back
     </div>
     <div class="flex items-center">
-      <SearchIcon class="w-6 h-6 cursor-pointer" />
+      <SearchIcon class="w-8 h-auto cursor-pointer" />
       <PlusIcon v-if="!checkRoute()" @click="openModal()" class="w-6 h-6 ml-3 cursor-pointer" />
     </div>
   </div>
